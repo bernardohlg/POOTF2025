@@ -1,9 +1,8 @@
 package com.bgarcia;
-import java.util.Duration;
-import java.util.HashSet;
-import java.util.Map;
-import java.util.Objects;
-import java.util.Set;
+
+import com.bgarcia.exceptions.EstacionamentoException;
+import java.util.ArrayList;
+import java.util.List;
 
 public abstract class Usuario {
     private String nome;
@@ -24,4 +23,8 @@ public String getCPF() {
     return CPF;
 }
 
-public Set<Veiculo> getVeiculos
+public Set<Veiculo> getVeiculos() {
+    return veiculos;
+}
+
+public void addVeiculo
